@@ -4,4 +4,5 @@ metadata:
   name: argocd-cm 
 data:
   accounts.high10hunter: apiKey, login
+  accounts.gitops-ci: apiKey
   admin.enabled: "false"
