@@ -4,3 +4,4 @@ metadata:
   name: argocd-cm 
 data:
   accounts.high10hunter: apiKey, login
+  admin.enabled: "false"
