@@ -6,10 +6,10 @@ spec:
   destination: 
     namespace: argocd 
     server: https://kubernetes.default.svc 
-  project: argocd 
+  project: default 
   source: 
     path: access-control/kustomize-installation 
-    repoURL: https://github.com/High10Hunter/ha-argocd-training 
+    repoURL: https://github.com/High10Hunter/ha-argocd-training.git 
     targetRevision: main
   syncPolicy:
     automated:

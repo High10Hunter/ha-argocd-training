@@ -8,7 +8,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kustomize-installation
-    repoURL: https://github.com/High10Hunter/ha-argocd-training/ha-operation
+    path: ha-operation/kustomize-installation
+    repoURL: https://github.com/High10Hunter/ha-argocd-training
     targetRevision: main
 
