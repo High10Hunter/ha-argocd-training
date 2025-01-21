@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1 
+kind: Application 
+metadata:
+  name: argocd-nonprod
+spec: 
+  destination: 
+    namespace: argocd-nonprod
+    server: https://kubernetes.default.svc 
+  project: default 
+  source: 
+    path: trouble-shooting/initial-setup/argocd-nonprod
+    repoURL: https://github.com/High10Hunter/ha-argocd-training.git 
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: false
